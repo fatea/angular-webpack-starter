@@ -1,14 +1,6 @@
-# angular-seed — the seed for AngularJS apps
+# anular-webpack-starter (with babel)
 
-This project is an application skeleton for a typical [AngularJS](http://angularjs.org/) web app.
-You can use it to quickly bootstrap your angular webapp projects and dev environment for these
-projects.
-
-The seed contains a sample AngularJS application and is preconfigured to install the Angular
-framework and a bunch of development and testing tools for instant web development gratification.
-
-The seed app doesn't do much, just shows how to wire two controllers and views together.
-
+A modified version of angular-seed. It provides users with boost of an angular project, which enables **webpack to wrap everything** into a bundle.js and enables **babel to help you write JS in ES6 and ES7**, for instance, decorator and async/await.
 
 ## Getting Started
 
@@ -22,13 +14,13 @@ You need git to clone the angular-seed repository. You can get git from
 We also use a number of node.js tools to initialize and test angular-seed. You must have node.js and
 its package manager (npm) installed.  You can get them from [http://nodejs.org/](http://nodejs.org/).
 
-### Clone angular-seed
+### Clone angular-webpack-starter
 
-Clone the angular-seed repository using [git][git]:
+Clone the angular-webpack-starter repository using [git][git]:
 
 ```
 git clone https://github.com/fatea/angular-webpack-starter.git
-cd angular-seed
+cd angular-webpack-starter
 ```
 
 If you just want to start a new project without the angular-seed commit history then you can do:
