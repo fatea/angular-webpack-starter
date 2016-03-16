@@ -6,3 +6,5 @@ var angular = require("./bower_components/angular/angular.js");
 var ngRoute = require("./bower_components/angular-route/angular-route.js");
 //var ngResource = require("./bower_components/angular-resource/angular-resource.js");
 var app = require("./app.js");
+
+//# sourceMappingURL=main-compiled.js.map

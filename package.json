@@ -6,6 +6,11 @@
   "repository": "https://github.com/angular/angular-seed",
   "license": "MIT",
   "devDependencies": {
+    "babel-core": "^6.7.2",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-runtime": "^6.6.0",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-stage-0": "^6.5.0",
     "bower": "^1.3.1",
     "http-server": "^0.6.1",
     "jasmine-core": "^2.3.4",
@@ -31,5 +36,9 @@
     "preprotractor": "npm run update-webdriver",
     "protractor": "protractor e2e-tests/protractor.conf.js",
     "update-index-async": "node -e \"require('shelljs/global'); sed('-i', /\\/\\/@@NG_LOADER_START@@[\\s\\S]*\\/\\/@@NG_LOADER_END@@/, '//@@NG_LOADER_START@@\\n' + sed(/sourceMappingURL=angular-loader.min.js.map/,'sourceMappingURL=bower_components/angular-loader/angular-loader.min.js.map','app/bower_components/angular-loader/angular-loader.min.js') + '\\n//@@NG_LOADER_END@@', 'app/index-async.html');\""
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.7.2",
+    "babel-runtime": "^6.6.1"
   }
 }
