@@ -13,7 +13,6 @@ controllers.controller('mainControl', ['$scope', function($scope) {
     });
   }
 
-
   (async function() {
     console.log('Do some thing, ' + new Date());
     await sleep(3000);
