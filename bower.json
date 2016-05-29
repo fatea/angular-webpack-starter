@@ -1,0 +1,39 @@
+{
+  "name": "angular-seed",
+  "description": "A starter project for AngularJS",
+  "version": "0.0.0",
+  "homepage": "https://github.com/angular/angular-seed",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.4.0",
+    "angular-loader": "~1.4.0",
+    "angular-mocks": "~1.4.0",
+    "html5-boilerplate": "~5.2.0",
+    "jquery": "~2.2.1",
+    "bootstrap": "^3.2.0",
+    "angular-animate": "^1.4.0",
+    "angular-cookies": "^1.4.0",
+    "angular-resource": "^1.4.0",
+    "angular-route": "^1.4.0",
+    "angular-sanitize": "^1.4.0",
+    "angular-touch": "^1.4.0",
+    "angular-ui-sortable": "^0.14.0",
+    "jquery-ui": "^1.11.4",
+    "angular-local-storage": "^0.2.7"
+  },
+  "appPath": "app",
+  "moduleName": "myApp",
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "less/bootstrap.less",
+        "dist/css/bootstrap.css",
+        "dist/js/bootstrap.js"
+      ]
+    }
+  },
+  "resolutions": {
+    "angular": "1.5.6"
+  }
+}
