@@ -1,6 +1,8 @@
 var webpack = require('webpack');
 var path = require('path');
-var ngAnnotatePlugin = require('ng-annotate-webpack-plugin');
+//since I write standard angular inject, i don't need ngAnnotatePlugin.
+//You can add this back if you want it.
+// var ngAnnotatePlugin = require('ng-annotate-webpack-plugin');
 
 module.exports = {
   devtool: 'source-map',
@@ -31,20 +33,27 @@ module.exports = {
     new webpack.ResolverPlugin(
       new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin(".bower.json", ["main"])
     ),
-
-    new ngAnnotatePlugin({
-      add: true,
-      // other ng-annotate options here 
+    //add the following lines back if you use ngAnnotate Plugin
+    // new ngAnnotatePlugin({
+    //   add: true,
+    //   // other ng-annotate options here 
+    // }),
+    
+    new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': JSON.stringify('production')
+      }
     }),
     //add the following lines back if you want a minified bundle.js
-    // new webpack.optimize.UglifyJsPlugin({
-    //   compress: {
-    //     warnings: false
-    //   },
-    //   // mangle: {
-    //   // except: ['$super', '$', 'exports', 'require']
-    //   // }
-    // })
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: false
+      },
+      //I use the source-map for debugging so I don't need the except here
+      // mangle: {
+      // except: ['$super', '$', 'exports', 'require']
+      // }
+    })
   ],
   module: {
     loaders: [
