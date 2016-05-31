@@ -1,5 +1,6 @@
 require('babel-polyfill');
-
+require('./bower_components/bootstrap/dist/css/bootstrap.css');
+require('./main.css');
 var jquery = require("./bower_components/jquery/dist/jquery.js");
 var boostrap = require("./bower_components/bootstrap/dist/js/bootstrap.js");
 var jqueryUI = require("./bower_components/jquery-ui/jquery-ui.js");
