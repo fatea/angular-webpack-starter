@@ -3,16 +3,20 @@ var path = require('path');
 var ngAnnotatePlugin = require('ng-annotate-webpack-plugin');
 
 module.exports = {
+  devtool: 'source-map',
   //插件项
   plugins: [],
+
+  //I comment the entry config out because it is configured in Gulpfile.js instead
+  //If you don't use Gulp, add them back
   //页面入口文件配置
-  entry: [
-    'babel-polyfill',
-    './app/test.js'
-  ],
+  // entry: [
+  //   'babel-polyfill',
+  //   './app/test.js'
+  // ],
 
   output: {
-    filename: './app/bundle.js'
+    filename: './bundle.js'
   },
 
   resolve: {
