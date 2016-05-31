@@ -15,6 +15,6 @@ var ngTouch = require("./bower_components/angular-touch/angular-touch.js");
 var ui = {};
 ui.sortable = require("./bower_components/angular-ui-sortable/sortable.js");
 var LocalStorageModule = require("./bower_components/angular-local-storage/dist/angular-local-storage.js");
-// var mainCtrl = require("./controllers/main.js");
+
 var app = require("./test_app.js");
 

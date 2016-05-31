@@ -1,19 +1,5 @@
 'use strict';
 
-/**
- * @ngdoc function
- * @name myAngularProjectApp.controller:MainCtrl
- * @description
- * # MainCtrl
- * Controller of the myAngularProjectApp
- */
-
-
-
-
-'use strict';
-// var _ = require('lodash');
-
 var controllers = angular.module('controllers', []);
 
 controllers.controller('mainControl', ['$scope', 'localStorageService', function ($scope, localStorageService) {
