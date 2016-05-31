@@ -50,10 +50,11 @@ module.exports = {
       compress: {
         warnings: false
       },
+      output: {comments: false},
       //I use the source-map for debugging so I don't need the except here
-      // mangle: {
-      // except: ['$super', '$', 'exports', 'require']
-      // }
+       mangle: {
+       except: ['$super', '$', 'exports', 'require']
+       }
     })
   ],
   module: {
