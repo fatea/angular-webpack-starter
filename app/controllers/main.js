@@ -3,13 +3,21 @@
 var controllers = angular.module('controllers', []);
 
 controllers.controller('mainControl', ['$scope', 'localStorageService', function ($scope, localStorageService) {
-  async function sleep(timeout) {
+  var sleep = async (timeout) => {
     return new Promise((resolve, reject) => {
       setTimeout(function() {
         resolve();
       }, timeout);
     });
-  }
+  };
+
+  // async function sleep(timeout) {
+  //   return new Promise((resolve, reject) => {
+  //     setTimeout(function() {
+  //       resolve();
+  //     }, timeout);
+  //   });
+  // }
 
   (async function() {
     console.log('Do some thing, ' + new Date());
