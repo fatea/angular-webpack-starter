@@ -10,6 +10,10 @@ gulp.task('clean', () => {
   return del(['dist/*', '!dist/views']);
 });
 
+gulp.task('copy-index-html', () => {
+  return gulp.src(['./app/test.html'])
+    .pipe(gulp.dest('dist/'));
+});
 
 gulp.task('webpack', function () {
     //return gulp.src(['./app/test.js'])
@@ -22,4 +26,4 @@ gulp.task('watch', () => {
   gulp.watch(paths.scripts, ['clean, webpack']);
 });
 
-gulp.task('default', ['clean', 'webpack']);
+gulp.task('default', ['clean', 'copy-index-html', 'webpack']);

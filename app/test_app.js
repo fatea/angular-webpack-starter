@@ -21,6 +21,8 @@ app.config(['localStorageServiceProvider', function(localStorageServiceProvider)
   }])
 .config(['$routeProvider',
   function($routeProvider) {
+    // $locationProvider.hashPrefix();
+
     $routeProvider.
     when('/', {
       templateUrl: 'views/main.html',

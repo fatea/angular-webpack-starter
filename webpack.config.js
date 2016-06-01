@@ -19,7 +19,7 @@ module.exports = {
 
   output: {
     filename: './bundle.js',
-    publicPath: '/dist/'
+    publicPath: './'
   },
 
   resolve: {
@@ -37,9 +37,8 @@ module.exports = {
     //add the following lines back if you use ngAnnotate Plugin
     // new ngAnnotatePlugin({
     //   add: true,
-    //   // other ng-annotate options here 
+    //   // other ng-annotate options here
     // }),
-    
     new webpack.DefinePlugin({
       'process.env': {
         'NODE_ENV': JSON.stringify('production')
@@ -72,7 +71,7 @@ module.exports = {
         ]
       }
       },
-      
+
       {
         test: /jquery.js$/,
             loader: 'expose?jQuery'
